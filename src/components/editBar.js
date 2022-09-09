@@ -70,8 +70,13 @@ export default function EditBar({name, setName, desc, setDesc, show, setTags, ta
                     Themes
                 </p>
                 <div className='toggler' id='toggler' onClick={() => {
-                    document.getElementById('toggler').style.justifyContent = 'flex-start';
+                    if(document.getElementById('toggler').style.justifyContent == 'flex-start'){
+                        document.getElementById('toggler').style.justifyContent = 'flex-end';
+                    document.getElementById('app').setAttribute('dark-theme', "dark")
+                    }else{
+                        document.getElementById('toggler').style.justifyContent = 'flex-start';
                     document.getElementById('app').setAttribute('dark-theme', "light")
+                    }
                 }}>
                     <div className='circle' id='circle'></div>
                 </div>
