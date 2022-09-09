@@ -15,3 +15,6 @@ and much more to explore
 
 As this is a front-end project there is no need of registeration.
 So please click on get-started in the landing page, and proceed to the community page 
+If you like the design, then please vote me
+
+### Thankyou
