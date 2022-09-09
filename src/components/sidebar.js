@@ -1,7 +1,7 @@
 import '../screens/community/community.css';
 
 import {RiGroupLine} from 'react-icons/ri';
-import {FiMessageCircle, FiBox} from 'react-icons/fi';
+import {FiMessageCircle, FiBox, FiEdit} from 'react-icons/fi';
 import {MdOutlineFeaturedPlayList} from 'react-icons/md';
 
 import { Link } from 'react-router-dom';
@@ -53,7 +53,9 @@ export default function Sidebar({id}){
                     <Link to='/community/groups' className='menuItem'>
                         <RiGroupLine className='ico' color='white' size={24}/>
                     </Link>
-                    
+                    <Link to='/community/dashboard' className='menuItem'>
+                        <FiEdit className='ico' color='white' size={24}/>
+                    </Link>
                 </div>
             </div>
         </div>

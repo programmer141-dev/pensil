@@ -825,5 +825,8 @@
     .home .chatBox .box .topbar .group .acImg{
         margin-left: 5px;
     }
+    .home .feed .postSection .post {
+        width: 90%;
+    }
     
 }

@@ -180,10 +180,10 @@
 .container .joinBox .inner .form .btn{
     width: 190px;
     height: 45px;
-    background-color: rgba(173, 193, 250, 0.274);
+    background-color: rgb(51, 104, 250);
     border-radius: 8px;
     margin-top: 40px;
-    color: rgba(255, 255, 255, 0.356);
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat';
     display: flex;
     justify-content: center;
@@ -947,6 +947,17 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .asidebar .menu .menuItem .ico{
+        display: block;
+    }
+    .asidebar .menu .menuItem{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .home .feed {
         width: 100%;
         padding: 30px 20px 70px 20px;
@@ -1008,5 +1019,18 @@
 
     .container{
         height: max-content;
+    }
+    .note{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .joinBox{
+        padding: 30px 0;
+    }
+
+    .home .feed .postSection .post {
+        width: 90%;
     }
 }

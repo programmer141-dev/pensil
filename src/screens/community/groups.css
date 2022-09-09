@@ -123,6 +123,7 @@
     .cards .card{
         margin-right: 0;
         margin-bottom: 30px;
+        width: 100%;
     }
     .cards .card .details{
         z-index: 2;
