@@ -33,7 +33,7 @@ export default function FeedPost(){
                                     )
                                 }
                                 <p>
-                                    32 Likes
+                                    32
                                 </p>
                             </div>
                             <div className='cta'>

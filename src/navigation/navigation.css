@@ -1,16 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
-
-:root{
-    --bgColor : #5882F9;
-    --txtColor : #000;
-}
-
 .navbar{
     width: 100%;
     height: 90px;
     display: flex;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--txtColor);
     justify-content: space-between;
     padding:0 40px;
     /* position: fixed; */
@@ -19,7 +12,7 @@
     left: 0;
 }
 
-.ico{
+.mainicon{
     width: auto;
     height: 45px;
 }
@@ -33,7 +26,7 @@
 }
 
 .navigation .name{
-    color: var(--txtColor);
+    color: var(--black);
     font-family: 'Montserrat';
     text-decoration: none;
     font-weight: 600;
@@ -41,7 +34,7 @@
 
 
 .navigation .name:hover{
-    color: var(--bgColor);
+    color: var(--links);
 }
 
 .navigation .cta{
@@ -50,9 +43,9 @@
     border: 3px solid transparent;
     outline: none;
     padding: 0 20px;
-    background-color: var(--bgColor);
+    background: var(--links);
     font-size: 18px;
-    color: white;
+    color: var(--txtColor);
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Montserrat';
@@ -64,7 +57,15 @@
 }
 
 .navigation .cta:hover{
-    border: 3px solid var(--bgColor);
-    color: black;
+    border: 3px solid var(--links);
+    color: var(--black);
     background-color: transparent;
+}
+
+
+@media only screen and (max-width: 1264px){
+    .navigation{
+        display: none;
+    }
+
 }

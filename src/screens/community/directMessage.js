@@ -12,7 +12,7 @@ export default function DirectMessage() {
     return(
         <div className='home'>
             {
-                main ? <Sidebar /> : null
+                main ? <Sidebar id={2} /> : null
             }
             <div className='chatBox'>
                 <div className='box'>

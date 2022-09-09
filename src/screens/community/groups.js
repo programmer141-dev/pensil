@@ -1,11 +1,10 @@
-import ChatBar from '../../components/chatRightBar'
 import Sidebar from '../../components/sidebar'
 import './groups.css'
 
 export default function Groups(){
     return(
         <div className='home'>
-            <Sidebar />
+            <Sidebar id={3}/>
             <div className='section'>
                 <p className='head'>Community Groups</p>
                 <div className='cards'>

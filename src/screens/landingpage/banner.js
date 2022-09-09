@@ -22,7 +22,7 @@ function BannerSection() {
     return (
         <div className='bannerSection'>
             <div className='videoContainer'>
-                <video src={video} className='video' id="video" loop />
+                <video src={video} className='video' autoPlay id="video" loop />
                 <div className='playButton' onClick={() => {
                     played();
                 }}>

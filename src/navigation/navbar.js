@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <div className="navbar">
-        <img src={ico} className='ico'/>
+        <img src={ico} className='mainicon'/>
         <div className='navigation'>
             <a href='/' className='name'>
                 Communities

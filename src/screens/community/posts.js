@@ -6,7 +6,7 @@ import PostRightBar from '../../components/postRightBar';
 export default function Posts (){
     return(
         <div className='home'>
-            <Sidebar />
+            <Sidebar id={1} />
             <div className='feed'>
                 <p className='head'>Community Posts</p>
                 <div className='postSection'>

@@ -187,7 +187,7 @@
 
 .extraDetails{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -214,7 +214,7 @@
 }
 
 .extraDetails .section{
-    width: 30%;
+    width: 35%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -232,4 +232,155 @@
     font-weight: 400;
     font-size: 25px;
     width: 70%;
+}
+
+
+.Csection{
+    width: 100%;
+    height: max-content;
+    background-color:rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+}
+
+.Csection .section{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+.Csection .section .head{
+    font-family: "Montserrat";
+    color: #000;
+    font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.Csection .section .cardsection{
+    width: 100%;
+    height: max-content;
+    white-space: nowrap;
+    overflow-x:scroll;
+    display: inline-block;
+    display: -webkit-inline-box;
+}
+
+.Csection .section .cardsection::-webkit-scrollbar {
+    display: none;
+}
+   
+
+
+
+.Csection .section .cardsection .card{
+    width: 400px;
+    height: max-content;
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Csection .section .cardsection .card .bg{
+    width:100%;
+    height:120px;
+    background:rgb(248, 248, 248);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.Csection .section .cardsection .card .bg .head, 
+.Csection .section .cardsection .card .bg .sub{
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.Csection .section .cardsection .card .bg .sub{
+    font-size: 13px;
+    font-weight: 400;
+    width: 100%;
+    height: max-content;
+    background-color: red;
+    word-wrap: break-word;
+}
+
+.Csection .section .cardsection .card .bg .btn{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 10px;
+    background: #5882F9;
+}
+
+.Csection .section .cardsection .card .coverImg{
+    width: 100%;
+    height: 220px;
+}
+
+
+@media only screen and (max-width: 1264px){
+    .landing{
+        overflow: hidden;
+    }
+    .heroSection .section{
+        position: relative;
+        z-index: 3;
+    }
+    .heroSection .section .head{
+        font-size: 40px;
+    }
+    .heroSection .section .subHead{
+        font-size: 15px;
+    }
+    .bannerSection{
+        padding: 30px 0;
+        justify-content: flex-start;
+        height: max-content;
+    }
+    .video{
+        height: 200px;
+        border-radius:20px;
+    }
+    .playButton{
+        border-radius: 20px;
+    }
+
+    .playButton .play{
+        width: 50px;
+        height: 50px;
+    }
+    .playButton .play .playBtn{
+        width: 20px;
+        height: 30px;
+    }
+    .subTxt{
+        width: 90%;
+    }
+    .extraDetails .section .head{
+        font-size: 25px;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .extraDetails .section .sub{
+        font-size: 15px;
+        width: 70%;
+    }
+    .extraDetails .section{
+        width: 50%;
+        align-items: center;
+    }
 }

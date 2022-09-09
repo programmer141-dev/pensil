@@ -1,21 +1,29 @@
 import './community.css';
 import Sidebar from '../../components/sidebar';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import FeedPost from '../../components/feed';
 import Posts from './posts';
 import DirectMessage from './directMessage';
 import Groups from './groups';
+import DFeed from '../dashboard/home';
 
 function Feed(){
     return(
         <div className="home">
-            <Sidebar />
+            <Sidebar id={0}/>
             <div className='feed'>
                 <p className='head'>
                     Rockstar Community
-                    <button className='create'>
-                        create
-                    </button>
+                    <div>
+                        <button className='create'>
+                            create
+                        </button>
+                        <button className='create'>
+                            <Link to='/community/dashboard' className='link'>
+                                Edit Page
+                            </Link>
+                        </button>
+                    </div>
                 </p>
                 <div className='banner'>
                     <p className='bannerHead'>
@@ -49,6 +57,7 @@ function Home(){
             <Route path='/posts' element={<Posts />}/>
             <Route path='/directMessage' element={<DirectMessage />}/>
             <Route path='/groups' element={<Groups />}/>
+            <Route path='/dashboard' element={<DFeed />}/>
         </Routes>
     )
 }

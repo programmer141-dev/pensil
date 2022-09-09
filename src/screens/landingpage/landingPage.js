@@ -3,6 +3,7 @@ import ExtraSection from './extraDetails';
 import HeroSection from './heroSection';
 import Navbar from '../../navigation/navbar'
 import './landingPage.css';
+import Communities from './communitites';
 
 function LandingPage() {
     return (
@@ -11,6 +12,7 @@ function LandingPage() {
         <HeroSection />
         <BannerSection />
         <ExtraSection />
+        <Communities />
       </div>
     );
   }
