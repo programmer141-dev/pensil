@@ -1001,5 +1001,12 @@
     .home .feed .head .create:last-child{
         display: none;
     }
-    
+    .container .joinBox .inner .form .input, 
+    .container .joinBox .inner .form .dropMenu{
+        width: 100%;
+    }
+
+    .container{
+        height: max-content;
+    }
 }

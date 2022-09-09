@@ -18,7 +18,7 @@ export default function Communities(){
 export const CommunityCard = () => {
     return(
         <div className="card">
-            <img src='https://picsum.photos/300/200' className='coverImg' />
+            <img src='https://picsum.photos/300/350' className='coverImg' />
             <div className='bg'>
                 <p className='head'>Community name</p>
                 <button className='btn'>Join Community</button>
