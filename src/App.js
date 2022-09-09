@@ -4,10 +4,9 @@ import './App.css';
 import Main from './main';
 
 function App() {
-   const [theme, setTheme] = React.useState('dark');
 
   return (
-   <div id='app' dark-theme={theme}>
+   <div id='app' dark-theme='dark'>
       <BrowserRouter>
         <Main />
      </BrowserRouter>

@@ -4,6 +4,7 @@ import {useEffect, useState} from 'react'
 export default function EditBar({name, setName, desc, setDesc, show, setTags, tags}){
     const [img, setImg] = useState('')
     const [tag, setTag] = useState('')
+   const [theme, setTheme] = useState('dark');
     
     const grabImage = (e) => {
         let file = new FileReader();
@@ -55,7 +56,7 @@ export default function EditBar({name, setName, desc, setDesc, show, setTags, ta
                     }
                 </div>
                 <p className='head'>
-                    Community Theme
+                    Community Main Theme
                 </p>
                 <div className='colorGrid'>
                     <div className='color red' onClick={() => SetMainColor('#f95858')} style={{background : '#f95858'}}/>
@@ -64,6 +65,15 @@ export default function EditBar({name, setName, desc, setDesc, show, setTags, ta
                     <div className='color green' onClick={() => SetMainColor('#3000e3')} style={{background : '#3000e3'}}/>
                     <div className='color blue' onClick={() => SetMainColor('#585bf9')}  style={{background : '#585bf9'}} />
                     <div className='color lightblue' onClick={() => SetMainColor('#8294f3')} style={{background : '#8294f3'}}/>
+                </div>
+                <p className='head'>
+                    Themes
+                </p>
+                <div className='toggler' id='toggler' onClick={() => {
+                    document.getElementById('toggler').style.justifyContent = 'flex-start';
+                    document.getElementById('app').setAttribute('dark-theme', "light")
+                }}>
+                    <div className='circle' id='circle'></div>
                 </div>
                 {
                     show ? (
